@@ -1,0 +1,21 @@
+{
+  "name": "beckinho-loja",
+  "version": "1.0.0",
+  "description": "Loja do beckinho de copos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "loja",
+    "node",
+    "app",
+    "vendas"
+  ],
+  "author": "bekinho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1"
+  }
+}
