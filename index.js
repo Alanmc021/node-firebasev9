@@ -12,11 +12,6 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://teste-908b8-default-rtdb.firebaseio.com"
 });
-//Ler toda base de dados : Produtos
-
-
-
-//Criar um novo produto
 
 app.get("/produtos", (req, res) => {
     const produtosRef = admin.database().ref("produto");
@@ -68,9 +63,6 @@ app.post("/atualizar/:id", (req, res) => {
 
 })
 
-//deletar um novo produto
-
-
 app.delete("/produto/:id", (req, res) => {
     const id = req.params.id
 
@@ -84,15 +76,6 @@ app.delete("/produto/:id", (req, res) => {
 
 })
 
-
-
-
-
-
-
-
-
-
 //LER NO REALTIME DATE BASE COPO
 app.get("/ler", (req, res) => {
     return res.send("OK")
@@ -103,7 +86,3 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Servidor inicando na porta ${PORT}`);
 })
-
-//CRIAR NO REALTIME DATE BASE COPO
-//DELETAR NO REALTIME DATE BASE COPO
-//EDITAR NO REALTIME DATE BASE COPO
